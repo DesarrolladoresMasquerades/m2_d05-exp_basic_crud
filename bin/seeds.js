@@ -84,6 +84,4 @@ Book.create(books)
     console.log(`Created ${booksFromDB.length} books`);
     mongoose.connection.close();
   })
-  .catch(err =>
-    console.log(`An error occurred while getting books from the DB: ${err}`)
-  );
+  .catch(err => console.log(`An error occurred while creating books: ${err}`));
